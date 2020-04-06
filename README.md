@@ -28,5 +28,4 @@ O projeto foi desenvolvido na semana omnistack 11.0 da [Rocketseat](https://rock
 >* Faça push para a sua branch: git push origin minha-feature;
 >* Depois que o merge da sua pull request for feito, você pode deletar a sua branch.
 
-## Licença
-MIT License
+![Licença](https://camo.githubusercontent.com/07a231564afff314fd36b9a0276216c988f5baae/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6963656e73652d4d49542d627269676874677265656e)
