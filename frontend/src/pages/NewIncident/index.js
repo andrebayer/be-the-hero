@@ -6,9 +6,6 @@ import api from '../../services/api';
 
 import './styles.css';
 
-
-
-
 import LogoImg from '../../assets/logo.svg';
 
 
@@ -45,7 +42,7 @@ export default function NewIncident() {
             alert('Erro ao cadastrar caso, tente novamente.');
         }
 
-    }
+    } 
 
 
     return (
