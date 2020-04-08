@@ -14,9 +14,10 @@ export default function Incidents() {
     const route = useRoute();
 
     const incident = route.params.incident;
-    
-    const message = `Olá ${incident.name}, estou entrando em contato pois gostaria de ajudar no caso "${incident.title}" com o valor de ${ Intl.NumberFormat('pt-BR', {
-        style: 'currency', currency: 'BRL'}).format(incident.value)}`;
+
+    const message = `Olá ${incident.name}, estou entrando em contato pois gostaria de ajudar no caso "${incident.title}" com o valor de ${Intl.NumberFormat('pt-BR', {
+        style: 'currency', currency: 'BRL'
+    }).format(incident.value)}`;
 
     function navigateBack() {
         navigation.goBack();
@@ -31,7 +32,7 @@ export default function Incidents() {
     }
 
     function sendWhatsapp() {
-        Linking.openURL(`whatsapp://send?phone=${incident.whatsapp}&text=${message}`);
+        Linking.openURL(`whatsapp://send?phone=+55${incident.whatsapp}&text=${message}`);
     }
 
     return (
@@ -50,6 +51,10 @@ export default function Incidents() {
 
                 <Text style={styles.incidentProperty}>CASO:</Text>
                 <Text style={styles.incidentValue}>{incident.title}</Text>
+
+
+                <Text style={styles.incidentProperty}>DESCRIÇÃO:</Text>
+                <Text style={styles.incidentValue}>{incident.description}</Text>
 
                 <Text style={styles.incidentProperty}>VALOR:</Text>
                 <Text style={styles.incidentValue}>
